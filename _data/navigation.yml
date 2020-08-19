@@ -5,5 +5,7 @@ main:
     url: /about/
   - title: "Archives"
     url: /archives/
+  - title: "Contact me"
+    url: /contact/
  # - title: "GitHub"
 #  url: https://github.com/yous/whiteglass
