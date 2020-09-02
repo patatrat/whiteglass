@@ -31,17 +31,19 @@ layout: default
             {% if post.external-url %}
               • <a href="{{ post.url | relative_url }}">Permalink</a>
             {% endif %}
+              • <span data-talk-id="{{ post.url }}"></span>
           </p>
-        </header>
-
+            
+          </header>
+        
         <div class="post-content">
           {{ post.excerpt }}
         </div>
-        {% if post.content contains site.excerpt_separator %}
-          <p class="post-continue">
-            <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
+           <p class="post-continue">
+          <a href="{{ post.url | relative_url }}">Read more &rarr;</a>
           </p>
-        {% endif %}
+                 
+          
       </li>
     {% endfor %}
   </ul>
